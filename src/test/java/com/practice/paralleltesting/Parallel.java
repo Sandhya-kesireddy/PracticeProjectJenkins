@@ -11,7 +11,7 @@ public class Parallel {
     @Test
     public void doLoginParallel(String Browser) throws InterruptedException {
         Date d=new Date();
-        System.out.println(Browser+"...." +d);
+        System.out.println(Browser+"..Date is.." +d);
         Thread.sleep(2000);
     }
 }
