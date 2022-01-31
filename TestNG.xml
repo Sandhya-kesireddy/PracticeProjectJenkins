@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite" >
+<listeners>
+    <listener class-name="com.practice.listeners.CustomListener"></listener>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+</listeners>
+  <test name="LoginTestChrome">
+     <parameter name="Browser" value="Chrome"></parameter>
+      <classes>
+      <class name="com.practice.paralleltesting.Parallel"/>
+
+      </classes>
+  </test> <!-- Test -->
+    <test name="LoginTestFirefox">
+        <parameter name="Browser" value="Firefox"></parameter>
+        <classes>
+            <class name="com.practice.paralleltesting.Parallel"/>
+
+        </classes>
+    </test>
+</suite> <!-- Suite -->
